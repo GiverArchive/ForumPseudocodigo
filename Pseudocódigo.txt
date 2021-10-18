@@ -1,0 +1,21 @@
+// Problema: O jogador pode passar para o próximo nível?
+// Autor: Will
+
+UltimoNivel = 100
+NivelJogador = Jogador -> Nivel
+
+Se NivelJogador = UltimoNivel Então:
+    Não pode passar de nível
+    Retorne
+FimSe
+
+PontosJogador = Jogador -> Pontos
+
+Se PontosJogador >= 1000 Então
+    Pode passar de nível
+    Jogador -> Pontos = 0
+    Jogador -> Nivel = Nivel + 1
+Senão
+    Não pode passar de nível
+    Retorne
+FimSe
