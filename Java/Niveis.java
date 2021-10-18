@@ -1,3 +1,6 @@
+// Problema: O jogador pode passar para o próximo nível?
+// Autor: Will
+
 public class Niveis {
 
   public static final int ULTIMO_NIVEL = 100;

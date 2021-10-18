@@ -1,3 +1,6 @@
+// Problema: O jogador pode passar para o próximo nível?
+// Autor: Will
+
 public class Jogador {
   private final String apelido;
   private int nivel;
