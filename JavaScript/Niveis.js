@@ -10,11 +10,13 @@ function Player(apelido, nivel, pontos) {
 }
 
 function passarDeNivel(player) {
-  if(player.nivel === ULTIMO_NIVEL) {
+  const { nivel, pontos } = player;
+
+  if(nivel === ULTIMO_NIVEL) {
     return false;
   }
 
-  if(player.pontos >= 1000) {
+  if(pontos >= 1000) {
     player.nivel++;
     player.pontos = 0;
     return true;
